@@ -1359,6 +1359,6 @@ if _G.PreviousGaySense then
 	_G.PreviousGaySense:Destroy()
 end
 
-_G.PeviousGaySense = Gaysense.Gaysense
+_G.PreviousGaySense = Gaysense.Gaysense
 
 return Gaysense
