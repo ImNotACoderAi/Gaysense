@@ -280,13 +280,498 @@ function Gaysense:CreateWindow()
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
 			BackgroundTransparency = 1
 		})
+		
+		do
+			Interface.EspPreview = Utilities.NewObject("Frame", {
+				Parent = Interface.Interface,
+				Name = "EspPreview",
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(13, 15, 16),
+				Size = UDim2.new(0, 160, 0.5, 0),
+				Position = UDim2.new(1, 5, 0, 0),
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				Visible = false
+			})
+
+			Interface.Rainbow2 = Utilities.NewObject("Frame", {
+				Parent = Interface.EspPreview,
+				Name = "Rainbow",
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				Size = UDim2.new(1, 0, 0, 3),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Preview = Utilities.NewObject("ViewportFrame", {
+				Parent = Interface.EspPreview,
+				Name = "Preview",
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				Size = UDim2.new(1, 0, 1, 0),
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				BackgroundTransparency = 1
+			})
+
+			Interface.Box = Utilities.NewObject("Frame", {
+				Parent = Interface.Preview,
+				Name = "Box",
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				AnchorPoint = Vector2.new(0.5, 0.5),
+				Size = UDim2.new(0, 116, 0, 136),
+				Position = UDim2.new(0.5, 0, 0.5, 1),
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				BackgroundTransparency = 1
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Box,
+				Name = "Frame",
+				ZIndex = 65,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				Size = UDim2.new(1, 0, 0, 1),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Frame,
+				Name = "Frame",
+				ZIndex = 64,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+				Size = UDim2.new(1, 2, 1, 2),
+				Position = UDim2.new(0, -1, 0, -1),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Box,
+				Name = "Frame",
+				ZIndex = 65,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				AnchorPoint = Vector2.new(0, 1),
+				Size = UDim2.new(1, 0, 0, 1),
+				Position = UDim2.new(0, 0, 1, 0),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Frame,
+				Name = "Frame",
+				ZIndex = 64,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+				Size = UDim2.new(1, 2, 1, 2),
+				Position = UDim2.new(0, -1, 0, -1),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Box,
+				Name = "Frame",
+				ZIndex = 65,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				Size = UDim2.new(0, 1, 1, 0),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Frame,
+				Name = "Frame",
+				ZIndex = 64,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+				Size = UDim2.new(1, 2, 1, 2),
+				Position = UDim2.new(0, -1, 0, -1),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Box,
+				Name = "Frame",
+				ZIndex = 65,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				Size = UDim2.new(0, 1, 1, 0),
+				Position = UDim2.new(1, 0, 0, 0),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.Frame,
+				Name = "Frame",
+				ZIndex = 64,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+				Size = UDim2.new(1, 2, 1, 2),
+				Position = UDim2.new(0, -1, 0, -1),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.HealthBar = Utilities.NewObject("Frame", {
+				Parent = Interface.Preview,
+				Name = "HealthBar",
+				ZIndex = 65,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(140, 255, 45),
+				Size = UDim2.new(0, 1, 0, 68),
+				Position = UDim2.new(0.5, -62, 1, -104),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.Frame = Utilities.NewObject("Frame", {
+				Parent = Interface.HealthBar,
+				Name = "Frame",
+				ZIndex = 64,
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+				Size = UDim2.new(1, 2, 2, 2),
+				Position = UDim2.new(0, -1, -1, -1),
+				BorderColor3 = Color3.fromRGB(0, 0, 0)
+			})
+
+			Interface.TextLabel = Utilities.NewObject("TextLabel", {
+				Parent = Interface.HealthBar,
+				Name = "TextLabel",
+				BorderSizePixel = 0,
+				TextXAlignment = Enum.TextXAlignment.Right,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				TextSize = 9,
+				FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal),
+				TextColor3 = Color3.fromRGB(255, 255, 255),
+				BackgroundTransparency = 1,
+				AnchorPoint = Vector2.new(1, 0),
+				Size = UDim2.new(0, 30, 0, 12),
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				Text = "100",
+				Position = UDim2.new(0, -2, 0, 0)
+			})
+
+			Interface.Name = Utilities.NewObject("TextLabel", {
+				Parent = Interface.Preview,
+				Name = "Name",
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				TextSize = 9,
+				FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal),
+				TextColor3 = Color3.fromRGB(255, 255, 255),
+				BackgroundTransparency = 1,
+				AnchorPoint = Vector2.new(0.5, 0.5),
+				Size = UDim2.new(0, 116, 0, 9),
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				Text = "Preview Esp",
+				Position = UDim2.new(0.5, 0, 0.5, -76)
+			})
+
+			Interface.Distance = Utilities.NewObject("TextLabel", {
+				Parent = Interface.Preview,
+				Name = "Distance",
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				TextSize = 9,
+				FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal),
+				TextColor3 = Color3.fromRGB(181, 181, 181),
+				BackgroundTransparency = 1,
+				AnchorPoint = Vector2.new(0.5, 0.5),
+				Size = UDim2.new(0, 116, 0, 9),
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				Text = "[ 0 Studs ]",
+				Position = UDim2.new(0.5, 0, 0.5, 78)
+			})
+
+			Interface.Gun = Utilities.NewObject("TextLabel", {
+				Parent = Interface.Preview,
+				Name = "Gun",
+				BorderSizePixel = 0,
+				BackgroundColor3 = Color3.fromRGB(255, 71, 34),
+				TextSize = 9,
+				FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal),
+				TextColor3 = Color3.fromRGB(255, 71, 34),
+				BackgroundTransparency = 1,
+				AnchorPoint = Vector2.new(0.5, 0.5),
+				Size = UDim2.new(0, 116, 0, 9),
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				Text = "Deagle",
+				Position = UDim2.new(0.5, 0, 0.5, 90)
+			})
+
+			Interface.Rig = Utilities.NewObject("Model", {
+				Name = "Rig",
+				Parent = Interface.Preview,
+				WorldPivot = CFrame.new(-0.3400000035762787, 0, -0.30000001192092896, 1, 0, 1.7484555314695172e-07, 0, 1, 0, -1.7484555314695172e-07, 0, 1)
+			})
+
+			Interface.LegRight = Utilities.NewObject("Model", {
+				Name = "LegRight",
+				WorldPivot = CFrame.new(-0.4900009334087372, -1.685499668121338, -6.300000190734863, -1, 0, -8.742277657347586e-08, 0, 1, 0, 8.742277657347586e-08, 0, -1),
+				Parent = Interface.Rig
+			})
+
+			Interface.LeftFoot = Utilities.NewObject("Part", {
+				Name = "LeftFoot",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(-0.49000099301338196, -2.4000003337860107, -6.300000190734863, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.LegRight
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071039",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.LeftFoot
+			})
+
+			Interface.LeftLowerLeg = Utilities.NewObject("Part", {
+				Name = "LeftLowerLeg",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(-0.4900009334087372, -1.7509998083114624, -6.300000190734863, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.LegRight
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071049",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.LeftLowerLeg
+			})
+
+			Interface.LeftUpperLeg = Utilities.NewObject("Part", {
+				Name = "LeftUpperLeg",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(-0.4900009334087372, -0.9709991812705994, -6.300000190734863, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.LegRight
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071065",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.LeftUpperLeg
+			})
+
+			Interface.ArmRight = Utilities.NewObject("Model", {
+				Name = "ArmRight",
+				WorldPivot = CFrame.new(-1.4900014400482178, 0.20950138568878174, -6.3000006675720215) * CFrame.Angles(0, math.rad(-180), 0), -- Add -180 degrees to the Y rotation
+				Parent = Interface.Rig
+			})
+
+			Interface.LeftHand = Utilities.NewObject("Part", {
+				Name = "LeftHand",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(-1.4900014400482178, -0.3999992609024048, -6.3000006675720215, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.ArmRight
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430070991",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.LeftHand
+			})
+
+			Interface.LeftLowerArm = Utilities.NewObject("Part", {
+				Name = "LeftLowerArm",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(-1.4900014400482178, 0.22600138187408447, -6.3000006675720215, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.ArmRight
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071005",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.LeftLowerArm
+			})
+
+			Interface.LeftUpperArm = Utilities.NewObject("Part", {
+				Name = "LeftUpperArm",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(-1.4900014400482178, 0.8190015554428101, -6.3000006675720215, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.ArmRight
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071044",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.LeftUpperArm
+			})
+
+			Interface.ArmLeft = Utilities.NewObject("Model", {
+				Name = "ArmLeft",
+				WorldPivot = CFrame.new(1.5099999904632568, 0.2095014452934265, -6.3000006675720215) * CFrame.Angles(0, math.rad(-180), 0), -- Add -180 degrees to the Y rotation
+				Parent = Interface.Rig
+			})
+
+			Interface.RightHand = Utilities.NewObject("Part", {
+				Name = "RightHand",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(1.5099999904632568, -0.3999992609024048, -6.3000006675720215, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent =Interface. ArmLeft
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430070997",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.RightHand
+			})
+
+			Interface.RightLowerArm = Utilities.NewObject("Part", {
+				Name = "RightLowerArm",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(1.5099999904632568, 0.22600138187408447, -6.3000006675720215, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.ArmLeft
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071013",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.RightLowerArm
+			})
+
+			Interface.RightUpperArm = Utilities.NewObject("Part", {
+				Name = "RightUpperArm",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(1.5099999904632568, 0.8190015554428101, -6.3000006675720215, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.ArmLeft
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071041",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.RightUpperArm
+			})
+
+			Interface.LegLeft = Utilities.NewObject("Model", {
+				Name = "LegLeft",
+				WorldPivot = CFrame.new(0.5099999904632568, -1.685499668121338, -6.300000190734863) * CFrame.Angles(0, math.rad(-180), 0), -- Add -180 degrees to the Y rotation
+				Parent = Interface.Rig
+			})
+
+			Interface.RightLowerLeg = Utilities.NewObject("Part", {
+				Name = "RightLowerLeg",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(0.5099999904632568, -1.7509998083114624, -6.300000190734863, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.LegLeft
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071105",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.RightLowerLeg
+			})
+
+			Interface.RightUpperLeg = Utilities.NewObject("Part", {
+				Name = "RightUpperLeg",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(0.5099999904632568, -0.9709991812705994, -6.300000190734863, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.LegLeft
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071105",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.RightUpperLeg
+			})
+
+			Interface.RightFoot = Utilities.NewObject("Part", {
+				Name = "RightFoot",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(0.5099999904632568, -2.4000003337860107, -6.300000190734863, -1.0000009536743164, 1.490118428648657e-08, -1.4702740713801177e-07, -1.490118251012973e-08, 1.0000009536743164, -1.490114875934978e-08, 2.781823127406824e-08, 1.490114787117136e-08, -1),
+				Parent = Interface.LegLeft
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071082",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.RightFoot
+			})
+
+			Interface.HumanoidPart = Utilities.NewObject("Model", {
+				Name = "HumanoidPart",
+				WorldPivot = CFrame.new(0.009999999776482582, -0.3500000238418579, -6.300000190734863) * CFrame.Angles(0, math.rad(-180), 0), -- Add -180 degrees to the Y rotation
+				Parent = Interface.Rig
+			})
+
+			Interface.LowerTorso = Utilities.NewObject("Part", {
+				Name = "LowerTorso",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(0.009999999776482582, -0.3500000238418579, -6.300000190734863, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+				Parent = Interface.HumanoidPart
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071109",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.LowerTorso
+			})
+
+			Interface.UpperTorso = Utilities.NewObject("Part", {
+				Name = "UpperTorso",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(0.009999999776482582, 0.6499999761581421, -6.300000190734863, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+				Parent = Interface.HumanoidPart
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430071038",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.UpperTorso
+			})
+
+			Interface.Head = Utilities.NewObject("Part", {
+				Name = "Head",
+				BottomSurface = Enum.SurfaceType.Smooth,
+				TopSurface = Enum.SurfaceType.Smooth,
+				Size = Vector3.new(4, 1, 2),
+				CFrame = CFrame.new(0.009999999776482582, 1.949999988079071, -6.300000190734863, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+				Parent = Interface.HumanoidPart
+			})
+
+			Utilities.NewObject("SpecialMesh", {
+				MeshId = "rbxassetid://7430070993",
+				MeshType = Enum.MeshType.FileMesh,
+				Parent = Interface.Head
+			})
+
+			Interface.face = Utilities.NewObject("Decal", {
+				Name = "face",
+				Texture = "rbxasset://textures/face.png",
+				Parent = Interface.Head,
+				Face = "Back"
+			})
+		end
 	end
 
 	Interface.Logic = {
 		Methods = {
 			Color = function()
 				local numSegments = 100
-
 				if not Interface.RainbowSegments then
 					Interface.RainbowSegments = {}
 					for i = 1, numSegments do
@@ -300,16 +785,35 @@ function Gaysense:CreateWindow()
 						})
 						table.insert(Interface.RainbowSegments, segment)
 					end
-				end
 
+					for i = 1, numSegments do
+						local segment = Utilities.NewObject("Frame", {
+							Parent = Interface.Rainbow2,
+							BorderSizePixel = 0,
+							BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+							Size = UDim2.new(1 / numSegments, 0, 1, 0),
+							Position = UDim2.new((i - 1) / numSegments, 0, 0, 0),
+							BorderColor3 = Color3.fromRGB(0, 0, 0)
+						})
+						table.insert(Interface.RainbowSegments, segment)
+					end
+				end
 				local hueOffset = (os.clock() * 0.25) % 1
 				for i, segment in ipairs(Interface.RainbowSegments) do
 					local hue = (hueOffset + (i / numSegments)) % 1
 					segment.BackgroundColor3 = Color3.fromHSV(hue, 1, 1)
 				end
+			end,
+			
+			Toggle = function(Object, state)
+				if state == nil then
+					Object.Visible = not Object.Visible
+				else
+					Object.Visible = state
+				end
 			end
 		},
-		
+
 		Setup = function()
 			local lastUpdate = 0
 			local updateInterval = 1/60
@@ -339,7 +843,9 @@ function Gaysense:CreateWindow()
 		end
 	}
 
-	function Interface:CreateTab(Name)
+	function Interface:CreateTab(Name, Callback)
+		Callback = Callback or function() end
+		
 		local Tab = {
 			Hover = false,
 			Active = false,
@@ -471,6 +977,7 @@ function Gaysense:CreateWindow()
 				InputBegan = function(Input)
 					if (Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch) and Tab.Hover then
 						Tab.Logic.Methods:ActivateTab()
+						Callback()
 					end
 				end
 			},
@@ -1331,6 +1838,36 @@ function Gaysense:CreateWindow()
 		return Tab
 	end
 
+	function Interface:CreateEspPreview()
+		local Esp = {}
+		
+		function Esp:TogglePreview(state)
+			Interface.Logic.Methods.Toggle(Interface.EspPreview, state)
+		end
+		
+		function Esp:ToggleBox()
+			Interface.Logic.Methods.Toggle(Interface.Box)
+		end
+		
+		function Esp:ToggleHealthBar()
+			Interface.Logic.Methods.Toggle(Interface.HealthBar)
+		end
+		
+		function Esp:ToggleDistance()
+			Interface.Logic.Methods.Toggle(Interface.Distance)
+		end
+		
+		function Esp:ToggleGun()
+			Interface.Logic.Methods.Toggle(Interface.Gun)
+		end
+		
+		function Esp:ToggleName()
+			Interface.Logic.Methods.Toggle(Interface.Name)
+		end
+		
+		return Esp
+	end
+
 	Interface.Logic.Setup()
 
 	return Interface
@@ -1341,10 +1878,12 @@ coroutine.wrap(function()
 
 	Services.RunService.RenderStepped:Connect(function()
 		local newString = ""
+		
 		for i = 1, math.random(5, 25) do
 			local randomIndex = math.random(1, #Chars)
 			newString = newString .. Chars:sub(randomIndex, randomIndex)
 		end
+		
 		Gaysense.Gaysense.Name = newString
 		
 		if Gaysense.Parent == Variables.LocalPlayer.PlayerGui then
