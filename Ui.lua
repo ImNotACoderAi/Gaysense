@@ -321,7 +321,8 @@ function Gaysense:CreateWindow()
 				Size = UDim2.new(0, 116, 0, 136),
 				Position = UDim2.new(0.5, 0, 0.5, 1),
 				BorderColor3 = Color3.fromRGB(0, 0, 0),
-				BackgroundTransparency = 1
+				BackgroundTransparency = 1,
+				Visible = false
 			})
 
 			Interface.Frame = Utilities.NewObject("Frame", {
@@ -419,7 +420,8 @@ function Gaysense:CreateWindow()
 				BackgroundColor3 = Color3.fromRGB(140, 255, 45),
 				Size = UDim2.new(0, 1, 0, 68),
 				Position = UDim2.new(0.5, -62, 1, -104),
-				BorderColor3 = Color3.fromRGB(0, 0, 0)
+				BorderColor3 = Color3.fromRGB(0, 0, 0),
+				Visible = false
 			})
 
 			Interface.Frame = Utilities.NewObject("Frame", {
@@ -463,7 +465,8 @@ function Gaysense:CreateWindow()
 				Size = UDim2.new(0, 116, 0, 9),
 				BorderColor3 = Color3.fromRGB(0, 0, 0),
 				Text = "Preview Esp",
-				Position = UDim2.new(0.5, 0, 0.5, -76)
+				Position = UDim2.new(0.5, 0, 0.5, -76),
+				Visible = false
 			})
 
 			Interface.Distance = Utilities.NewObject("TextLabel", {
@@ -479,7 +482,8 @@ function Gaysense:CreateWindow()
 				Size = UDim2.new(0, 116, 0, 9),
 				BorderColor3 = Color3.fromRGB(0, 0, 0),
 				Text = "[ 0 Studs ]",
-				Position = UDim2.new(0.5, 0, 0.5, 78)
+				Position = UDim2.new(0.5, 0, 0.5, 78),
+				Visible = false
 			})
 
 			Interface.Gun = Utilities.NewObject("TextLabel", {
@@ -495,7 +499,8 @@ function Gaysense:CreateWindow()
 				Size = UDim2.new(0, 116, 0, 9),
 				BorderColor3 = Color3.fromRGB(0, 0, 0),
 				Text = "Deagle",
-				Position = UDim2.new(0.5, 0, 0.5, 90)
+				Position = UDim2.new(0.5, 0, 0.5, 90),
+				Visible = false
 			})
 
 			Interface.Rig = Utilities.NewObject("Model", {
@@ -1841,7 +1846,7 @@ function Gaysense:CreateWindow()
 	function Interface:CreateEspPreview()
 		local Esp = {}
 		
-		function Esp:TogglePreview(state)
+		function Esp:Toggle(state)
 			Interface.Logic.Methods.Toggle(Interface.EspPreview, state)
 		end
 		
